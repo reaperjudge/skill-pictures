@@ -22,6 +22,6 @@ class HelloWorldSkill(MycroftSkill):
         
     def stop(self):
         pass
-    
-    def create_skill():
-        return HelloWorldSkill()
+
+def create_skill():
+    return HelloWorldSkill()
