@@ -8,16 +8,17 @@ __author__ = 'reaperjudge'
 # Creating HelloWorldSKill extending MycroftSkill
 class HelloWorldSkill(MycroftSkill):
     def __init__(self):
-        super(HelloWorldSkill, self).__init__("HelloWorldSkill")
+        super(HelloWorldSkill, self).__init__(name="HelloWorldSkill")
 
     def initialize(self):
         # Creating GreetingsIntent requiring Greetings vocab
-        greetings = IntentBuilder("GreetingsIntent")
-                           .require("greetings").build()
+        greetings = IntentBuilder("GreetingsIntent"). \
+            require("greetings").build()
         # Associating a callback with the Intent
-        self.register_intent(greetings, self.handle_greetings)
+        self.register_intent(greetings,
+                             self.handle_greetings)
         
-    def handle_greetings(self):
+    def handle_greetings(self, message):
         # Sending a command to mycroft, speak Greetings Dialog
         self.speak_dialog("greetings")
         
