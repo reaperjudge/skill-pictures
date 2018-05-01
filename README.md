@@ -1,5 +1,5 @@
 # Skill-Shutdown
-To backtalk people (to pratice my programming)
+To shutdown picroft device
 
 ## Usage:
 * `shutdown`
