@@ -1,5 +1,5 @@
 # Skill-backtalk
-To backtalk people(to pratice my programming)
+To backtalk people (to pratice my programming)
 
 ## Usage:
 * `good morning'
