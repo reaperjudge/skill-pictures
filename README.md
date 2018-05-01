@@ -1,9 +1,9 @@
 # Skill-Shutdown
-To shutdown picroft device
+To shutdown picroft device (fails since root can't be forced universally)
 
 ## Usage:
 * `shutdown`
 * `shut off`
 
-## Backtalk:
+## wanted outcome:
 * `shutting down`
