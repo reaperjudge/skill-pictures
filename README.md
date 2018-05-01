@@ -17,3 +17,4 @@ To backtalk people (to pratice my programming)
 * `Go away`
 * `Go f yourself`
 * `Why must you bug me?`
+*'(and other stuff)'
