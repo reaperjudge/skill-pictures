@@ -4,6 +4,10 @@
 * `how are you`
 * `thank you`
 ## backtalk:
-* `hello world`
-* `how are you`
-* `thank you`
+* `Don't feel like talking`
+* `I'm mad at you`
+* `This has been a horrible day`
+* `Leave me alone`
+* `Go away`
+* `Go f yourself`
+* `Why must you bug me?`
