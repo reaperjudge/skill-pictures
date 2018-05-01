@@ -2,7 +2,7 @@
 from adapt.intent import IntentBuilder
 # Importing MycroftSkill class
 from mycroft.skills.core import MycroftSkill
-
+import subprocess
 __author__ = 'reaperjudge'
 
 # Creating Backtalk extending MycroftSkill
@@ -16,11 +16,11 @@ class Backtalk(MycroftSkill):
             require("greetings").build()
         # Associating a callback with the Intent
         self.register_intent(greetings,
-                             self.handle_greetings)
+                             self.handle_shutdown)
         
-    def handle_greetings(self, message):
+    def handle_shutdown(self, message):
         # Sending a command to mycroft, speak Greetings Dialog
-        self.speak_dialog("respond")
+        subprocess.call(["sudo","shutdown","-h","now"])
 
         
     def stop(self):
