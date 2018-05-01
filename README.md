@@ -2,12 +2,12 @@
 To backtalk people (to pratice my programming)
 
 ## Usage:
-* `good morning'
-* `good afternoon'
-* `good evening'
-* `don't backtalk me'
-* `backtalk'
-* `this is sparta'
+* `good morning`
+* `good afternoon`
+* `good evening`
+* `don't backtalk me`
+* `backtalk`
+* `this is sparta`
 
 ## Backtalk:
 * `Don't feel like talking`
@@ -17,4 +17,4 @@ To backtalk people (to pratice my programming)
 * `Go away`
 * `Go f yourself`
 * `Why must you bug me?`
-*'(and other stuff)'
+* `(and other stuff)`
