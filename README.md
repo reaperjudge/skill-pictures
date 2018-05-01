@@ -1,13 +1,12 @@
 # Skill-backtalk
 To backtalk people(to pratice my programming)
+
 ## Usage:
 * `good morning'
 * `good afternoon'
 * `good evening'
-* `let's talk'
 * `don't backtalk me'
 * `backtalk'
-* `what's up'
 * `this is sparta'
 
 ## backtalk:
