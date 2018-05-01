@@ -21,7 +21,7 @@ class Backtalk(MycroftSkill):
     def handle_shutdown(self, message):
         # Sending a command to mycroft, speak Greetings Dialog
         subprocess.call(["sudo","shutdown","-h","now"])
-
+        self.speak_dialog("respond")
         
     def stop(self):
         pass
