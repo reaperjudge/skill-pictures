@@ -6,7 +6,7 @@ from mycroft.skills.core import MycroftSkill
 __author__ = 'reaperjudge'
 
 # Creating HelloWorldSKill extending MycroftSkill
-class HelloWorldSkill(MycroftSkill):
+class Backtalk(MycroftSkill):
     def __init__(self):
         super(HelloWorldSkill, self).__init__(name="HelloWorldSkill")
 
@@ -20,10 +20,10 @@ class HelloWorldSkill(MycroftSkill):
         
     def handle_greetings(self, message):
         # Sending a command to mycroft, speak Greetings Dialog
-        self.speak_dialog("greetings")
+        self.speak_dialog("respond")
         
     def stop(self):
         pass
 
 def create_skill():
-    return HelloWorldSkill()
+    return Backtalk()
