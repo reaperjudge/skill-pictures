@@ -5,10 +5,10 @@ from mycroft.skills.core import MycroftSkill
 
 __author__ = 'reaperjudge'
 
-# Creating HelloWorldSKill extending MycroftSkill
+# Creating Backtalk extending MycroftSkill
 class Backtalk(MycroftSkill):
     def __init__(self):
-        super(HelloWorldSkill, self).__init__(name="HelloWorldSkill")
+        super(Backtalk, self).__init__(name="Backtalk")
 
     def initialize(self):
         # Creating GreetingsIntent requiring Greetings vocab
