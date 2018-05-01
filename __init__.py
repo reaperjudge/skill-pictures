@@ -20,7 +20,8 @@ class Backtalk(MycroftSkill):
         
     def handle_shutdown(self, message):
         # Sending a command to mycroft, speak Greetings Dialog
-        subprocess.call(["shutdown"])
+        subprocess.call(["systemctl poweroff -i"])
+        subprocess.call(["mycroft"])
         self.speak_dialog("respond")
         
     def stop(self):
