@@ -1,4 +1,4 @@
-# Skill-backtalk
+# Skill-Shutdown
 To backtalk people (to pratice my programming)
 
 ## Usage:
