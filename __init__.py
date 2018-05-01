@@ -21,6 +21,7 @@ class Backtalk(MycroftSkill):
     def handle_greetings(self, message):
         # Sending a command to mycroft, speak Greetings Dialog
         self.speak_dialog("respond")
+        self.speak("enter the end of the world")
         
     def stop(self):
         pass
