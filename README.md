@@ -7,7 +7,6 @@ To backtalk people(to pratice my programming)
 * `let's talk'
 * `don't backtalk me'
 * `backtalk'
-* `shut up'
 * `what's up'
 * `this is sparta'
 
