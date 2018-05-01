@@ -20,7 +20,6 @@ class Backtalk(MycroftSkill):
         
     def handle_greetings(self, message):
         # Sending a command to mycroft, speak Greetings Dialog
-        self.speak("hey google")
         self.speak_dialog("respond")
 
         
