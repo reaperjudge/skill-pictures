@@ -9,7 +9,7 @@ To backtalk people(to pratice my programming)
 * `backtalk'
 * `this is sparta'
 
-## backtalk:
+## Backtalk:
 * `Don't feel like talking`
 * `I'm mad at you`
 * `This has been a horrible day`
