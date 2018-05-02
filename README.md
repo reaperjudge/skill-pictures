@@ -1,9 +1,12 @@
 # Skill-Shutdown
-To shutdown picroft device
+To shutdown or restart picroft device
 
 ## Usage:
 * `shutdown`
 * `shut off`
+* `restart`
+* `reboot`
 
-## wanted outcome:
+## outcome:
 * `shutting down`
+* `restart`
