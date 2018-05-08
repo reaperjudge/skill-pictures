@@ -1,12 +1,8 @@
-# Skill-Shutdown
-To shutdown or restart picroft device
+# Skill-picture
+To to a picture
 
 ## Usage:
-* `shutdown`
-* `shut off`
-* `restart`
-* `reboot`
+* `snap`
 
 ## outcome:
-* `shutting down`
-* `restart`
+* `might take picture`
