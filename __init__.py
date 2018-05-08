@@ -3,35 +3,34 @@ from adapt.intent import IntentBuilder
 # Importing MycroftSkill class
 from mycroft.skills.core import MycroftSkill
 import os
+from time import sleep
+from picamera import PiCamera
 __author__ = 'reaperjudge'
-
 # Creating Backtalk extending MycroftSkill
-class Backtalk(MycroftSkill):
+class Picture(MycroftSkill):
+    camera = PiCamera()
+    camera.resolution = (1024, 768)
+
     def __init__(self):
-        super(Backtalk, self).__init__(name="Backtalk")
+        super(Picture, self).__init__(name="Picture")
 
     def initialize(self):
         # Creating GreetingsIntent requiring Greetings vocab
-        shutdown_intent = IntentBuilder("shutdownIntent").\
+        picture_intent = IntentBuilder("Intent").\
             require("shutdown").build()
-        self.register_intent(shutdown_intent,
-                               self.handle_shutdown_intent)
-
-        restart_intent = IntentBuilder("restartIntent").\
-            require("restart").build()
-        self.register_intent(restart_intent,
-                             self.handle_restart_intent)
-        
-    def handle_shutdown_intent(self, message):
-        self.speak("shutting Down")
-        os.system("systemctl poweroff")
-
-    def handle_restart_intent(self, message):
-        self.speak("restarting")
-        os.system("systemctl reboot")
+        self.register_intent(picture_intent,
+                               self.handle_intent)     
+    def handle_intent(self, message):
+        self.speak("taking picture")
+        camera.start_preview()
+        # Camera warm-up time
+        sleep(2)
+        camera.capture('foo.jpg')
+        self.speak("finished taking picture")
+        os.system("ls")
         
     def stop(self):
         pass
 
 def create_skill():
-    return Backtalk()
+    return Picture()
