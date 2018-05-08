@@ -26,9 +26,9 @@ class Picture(MycroftSkill):
         # Camera warm-up time
         sleep(2)
         camera.capture('foo.jpg')
-        self.speak("finished taking picture")
-        os.system("ls")
-        
+        self.speak("finished taking picture"
+        # html image search
+   
     def stop(self):
         pass
 
