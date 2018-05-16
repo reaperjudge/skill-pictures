@@ -25,7 +25,7 @@ class Picture(MycroftSkill):
         camera.start_preview()
         # Camera warm-up time
         sleep(2)
-        camera.capture('image2.jpg')
+        camera.capture('~/media/usb/image2.jpg')
         self.speak("finished taking picture")
     def stop(self):
         pass
