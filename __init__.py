@@ -8,12 +8,10 @@ from picamera import PiCamera
 __author__ = 'reaperjudge'
 # Creating Backtalk extending MycroftSkill
 class Picture(MycroftSkill):
-    camera = PiCamera()
-    camera.resolution = (1024, 768)
-
     def __init__(self):
         super(Picture, self).__init__(name="Picture")
-
+        camera = PiCamera()
+        camera.resolution = (1024, 768)
     def initialize(self):
         # Creating GreetingsIntent requiring Greetings vocab
         picture_intent = IntentBuilder("Intent").\
