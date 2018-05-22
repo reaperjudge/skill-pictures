@@ -3,7 +3,7 @@ from adapt.intent import IntentBuilder
 # Importing MycroftSkill class
 from mycroft.skills.core import MycroftSkill
 import os
-from time import sleep
+import time
 from picamera import PiCamera
 __author__ = 'reaperjudge'
 # Creating Backtalk extending MycroftSkill
@@ -23,7 +23,7 @@ class Picture(MycroftSkill):
         camera.start_preview()
         # Camera warm-up time
         sleep(2)
-        camera.capture('/media/usb/image2.jpg')
+        camera.capture('/media/usb/"+str(now)+".jpg')
         self.speak("finished taking picture")
     def stop(self):
         pass
